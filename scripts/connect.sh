@@ -7,7 +7,7 @@ else
 fi
 
 sleep 5
-cat /etc/danted.conf | sed "s/\$PI/"$PI"/" >> /etc/danted.conf
+cat /etc/danted.conf | sed "s/\$PI/"$PI"/" > /etc/danted.conf
 
 /usr/sbin/danted -f /etc/danted.conf -D
 
