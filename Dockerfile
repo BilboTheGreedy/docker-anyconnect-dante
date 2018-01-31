@@ -8,4 +8,6 @@ ADD scripts/danted.conf /etc/danted.conf
 
 EXPOSE 1081 3389
 
-CMD ["/root/connect.sh"]
+ENTRYPOINT ["/root/connect.sh"]
+
+CMD []
